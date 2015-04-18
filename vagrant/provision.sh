@@ -22,10 +22,10 @@ fi
 apt-get remove ruby1.9.1 libruby1.9.1
 
 # Required packages
-apt-get install -y ruby${RUBY_VERSION} ruby${RUBY_VERSION}-dev build-essential phantomjs libcurl4-openssl-dev libsqlite3-dev libxml2 libxml2-dev libxslt1.1 libxslt1-dev
+apt-get install -y ruby${RUBY_VERSION} ruby${RUBY_VERSION}-dev build-essential phantomjs libcurl4-openssl-dev libsqlite3-dev libxml2 libxml2-dev libxslt1.1 libxslt1-dev nodejs
 
 # Useful tools
-apt-get install -y git-core screen tmux elinks 
+apt-get install -y git-core screen tmux elinks
 
 # Postgresql. Do we really want a full postgres running?
 apt-get install -y postgresql-$PGSQL_VERSION libpq-dev postgresql-client-common postgresql-contrib-$PGSQL_VERSION postgresql-$PGSQL_VERSION-postgis-$PGIS_VERSION
